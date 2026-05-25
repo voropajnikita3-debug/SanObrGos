@@ -1292,95 +1292,60 @@
         }
 
         @media(max-width: 768px) {
-            section { 
-                padding: 70px 0; 
-            }
-            .nav { 
-                height: 78px; 
-            }
-            .logo { 
-                font-size: 26px; 
-            }
-            h1 { 
-                font-size: 38px; 
-            }
-            .hero p { 
-                font-size: 17px; 
-            }
-            .section-title h2 { 
-                font-size: 32px; 
-            }
-            .hero-buttons { 
-                flex-direction: column; 
-            }
-            .btn { 
-                width: 100%; 
-            }
-            .form-grid { 
-                grid-template-columns: 1fr; 
-            }
-            
-            /* ФИКС ПОПАПА НА МОБИЛКАХ (ЧТОБЫ ВМЕЩАЛСЯ И БЫЛ СКРОЛЛ) */
-            .popup-overlay { 
-                padding: 15px; 
-                align-items: flex-start; /* Прижимаем к верху для удобного скролла */
-            }
-            .popup-box {
-                border-radius: 28px;
-                margin: auto; /* По центру, если хватает места */
-            }
-            .popup-left, .popup-right { 
-                padding: 30px 20px; 
-            }
-            .popup-left h2 { 
-                font-size: 30px; 
-            }
-            .popup-left p { 
-                font-size: 16px; 
-                line-height: 1.7; 
-            }
-            .popup-submit { 
-                height: 64px; 
-                font-size: 17px; 
-            }
-            input, select, textarea { 
-                padding: 16px; 
-                font-size: 16px; 
-                border-radius: 16px; 
-            }
-            .input-box textarea {
-                height: 120px;
-            }
-            .popup-close { 
-                width: 44px; 
-                height: 44px; 
-                font-size: 20px;
-                top: 15px;
-                right: 15px;
-            }
-            .map-box { 
-                border-radius: 28px; 
-                min-height: 350px;
-            }
-            .map-box iframe {
-                min-height: 350px;
-            }
-            .floating a { 
-                width: 60px; 
-                height: 60px; 
-                font-size: 26px; 
-            }
-            .eeat-content h3 {
-                font-size: 26px;
-            }
-            .stat h3 {
-                font-size: 36px;
-            }
-            .process {
-                padding: 50px 20px;
-                border-radius: 30px;
-            }
-        }
+    section { padding: 70px 0; }
+    .nav { height: 78px; }
+    .logo { font-size: 26px; }
+    h1 { font-size: 38px; }
+    .hero p { font-size: 17px; }
+    .section-title h2 { font-size: 32px; }
+    .hero-buttons { flex-direction: column; }
+    .btn { width: 100%; }
+    .form-grid { grid-template-columns: 1fr; }
+    
+    /* ФИКС ПОПАПА НА МОБИЛКАХ (ЧТОБЫ ВМЕЩАЛСЯ И БЫЛ СКРОЛЛ) */
+    .popup-overlay { padding: 15px; align-items: flex-start; }
+    .popup-box { border-radius: 28px; margin: auto; }
+    .popup-left, .popup-right { padding: 30px 20px; }
+    .popup-left h2 { font-size: 30px; }
+    .popup-left p { font-size: 16px; line-height: 1.7; }
+    .popup-submit { height: 64px; font-size: 17px; }
+    input, select, textarea { padding: 16px; font-size: 16px; border-radius: 16px; }
+    .input-box textarea { height: 120px; }
+    .popup-close { width: 44px; height: 44px; font-size: 20px; top: 15px; right: 15px; }
+    
+    .map-box { border-radius: 28px; min-height: 350px; }
+    .map-box iframe { min-height: 350px; }
+    .floating a { width: 60px; height: 60px; font-size: 26px; }
+    
+    .eeat-content h3 { font-size: 26px; }
+
+    /* ФИКС БЛОКА О КОМПАНИИ И СЕРТИФИКАТОВ НА МОБИЛЬНЫХ */
+    .certificates-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    .cert-card {
+        padding: 24px 20px;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+    .cert-card h4 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .cert-card p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+    .legal-info {
+        padding: 20px 16px;
+        margin-top: 24px;
+    }
+    .legal-info div {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
     </style>
 </head>
 
